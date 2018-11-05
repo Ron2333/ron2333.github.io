@@ -23,6 +23,22 @@
 <br><br><br><br><br><br><br>
 <iframe width="420" height="345" src="https://www.youtube.com/watch?v=g1p5eNOsl7I">
 </iframe>
+<p>Select your favorite song in this album:</p>
+<form action="/action_page.php">
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Snow halation ">Snow halation <br>
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="baby maybe 恋のボタン">baby maybe 恋のボタン<br>
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Snow halation (Off Vocal)">Snow halation (Off Vocal)<br>
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="聖夜の女の子たち。…まだ明るいけど">聖夜の女の子たち。…まだ明るいけど<br>
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="あなたとクリスマス-高坂穂乃果">あなたとクリスマス-高坂穂乃果-<br><br>
 
+  Your favorite song is: <input type="text" id="result">
+  <input type="submit" value="Submit form">
+</form>
+
+<script>
+function myFunction(browser) {
+    document.getElementById("result").value = browser;
+}
+</script>
     </body>
 </html>
